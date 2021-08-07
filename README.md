@@ -5,5 +5,5 @@ The clients are implemented in headless manner. GraphQL API will bring data from
 
 Clients | Available features 
 --- | --- 
-ConsoleApplication .Net 5.0 | * Authentication using sitecore credetails <br> * Set authentication cookie to GraphQL reuests <br> * Sample query retirieval from sitecore instance
+ConsoleApplication .Net 5.0 | * Authentication using sitecore credentials <br> * Set authentication cookie to GraphQL requests <br> * Sample GraphQL query implementation from sitecore instance
 
