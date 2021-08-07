@@ -1,10 +1,6 @@
 # Sitecore-GraphQL-clients-sample
 
-This project contains sample integration of Sitecore GraphQL with different clients. Example contains below modules,
-
-* Authentication using sitecore credetails
-* Set authentication cookie to GraphQL reuests
-* Sample query retrieval from sitecore instance
+This project contains sample integration of Sitecore GraphQL with different clients.
 
 Clients | Available features 
 --- | --- 
