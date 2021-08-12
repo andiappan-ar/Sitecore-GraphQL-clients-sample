@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31521.260
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.GraphQL.ClientConsole", "Sitecore.GraphQL.ClientConsole.csproj", "{A4B2BD17-AEED-4136-8D94-58466A67BB07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.GraphQL.Authenticator", "..\Sitecore.GraphQL.Authenticator\Sitecore.GraphQL.Authenticator.csproj", "{655C424F-EF5E-4466-B15F-5BD2030E82BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.GraphQL.Services", "..\Sitecore.GraphQL.Services\Sitecore.GraphQL.Services.csproj", "{C24667D0-57BE-4B35-9FD7-FDB22D914FB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4B2BD17-AEED-4136-8D94-58466A67BB07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B2BD17-AEED-4136-8D94-58466A67BB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B2BD17-AEED-4136-8D94-58466A67BB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B2BD17-AEED-4136-8D94-58466A67BB07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655C424F-EF5E-4466-B15F-5BD2030E82BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655C424F-EF5E-4466-B15F-5BD2030E82BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655C424F-EF5E-4466-B15F-5BD2030E82BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655C424F-EF5E-4466-B15F-5BD2030E82BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C24667D0-57BE-4B35-9FD7-FDB22D914FB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24667D0-57BE-4B35-9FD7-FDB22D914FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24667D0-57BE-4B35-9FD7-FDB22D914FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24667D0-57BE-4B35-9FD7-FDB22D914FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {826237DA-20F2-446E-93B9-7724CE82DB47}
+	EndGlobalSection
+EndGlobal
