@@ -15,14 +15,17 @@ namespace Sitecore.GraphQL.ClientConsole
             string siteDomain = "arsc.dev.local";
 
             Console.WriteLine("***************** Login sitecore ********************"+Environment.NewLine);
-            Console.WriteLine("Enter user name:"+Environment.NewLine);
+            Console.WriteLine("Enter User Name:");
             var userName = Console.ReadLine();
-            Console.WriteLine("Enter password:" + Environment.NewLine);
+            Console.WriteLine("Enter password:");
             var password = Console.ReadLine();
 
             var authCookie = Login.GetAuthroizedCookie(SSCURL, domain, userName, password);
 
-            var graphQLQuery = @"{
+            if (!string.IsNullOrEmpty(authCookie))
+            {
+                Console.WriteLine("***************** Login successfull ********************" + Environment.NewLine);
+                var graphQLQuery = @"{
                                       item {
                                         name
                                         children {
@@ -31,9 +34,16 @@ namespace Sitecore.GraphQL.ClientConsole
                                       }
                                     }";
 
-            var graphQLData = ReadService.FetchGraphQLData<dynamic>(authCookie, SCC_GRAPHURL, siteDomain, graphQLQuery);
+                Console.WriteLine("GraphQL query:" + Environment.NewLine + graphQLQuery + Environment.NewLine);
+                var graphQLData = ReadService.FetchGraphQLData<dynamic>(authCookie, SCC_GRAPHURL, siteDomain, graphQLQuery);
+                Console.WriteLine("GraphQL Data:" + Environment.NewLine + JsonConvert.SerializeObject(graphQLData.Data));               
+            }
+            else
+            {
+                Console.WriteLine("***************** Login failed ********************" + Environment.NewLine);
+            }
+            Console.ReadLine();
 
-            Console.WriteLine(JsonConvert.SerializeObject(graphQLData.Data));
         }
     }
 }
