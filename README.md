@@ -14,9 +14,8 @@ Xamarin - Android & IOS | * Login page implementation and authenticate using sit
 
 ## Working samples
 ### .Net ConsoleApplication
-Login with your sitecore user name and password. Here we will login and get authentication token.
-
-Then run your graphQL query.
+* Login with your sitecore user name and password. Here we will login and get authentication token.
+* Then run your graphQL query.
 
 ![image](https://user-images.githubusercontent.com/11770345/129423167-8f159c4e-3af9-429e-9b62-fbe6f6a79ac0.png)
 
