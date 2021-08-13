@@ -11,8 +11,14 @@ namespace Sitecore.GraphQL.Authenticator.Authenticator
 {
     public static class Login
     {
-        public static string AuthToken = "";      
-        
+        public static string AuthToken = "";
+
+        //ngrok http https://arsc.dev.local:443 -host-header="arsc.dev.local:443"
+        public static string siteDomain = "d07636c9e720.ngrok.io";
+        public static string SSCURL = "https://" + siteDomain + "/sitecore/api/ssc/auth/login";
+        public static string SCC_GRAPHURL = "https://" + siteDomain + "/sitecore/api/graph/items/master";
+        public static string domain = "sitecore";
+
         public static void SetAUthToken(string token)
         {
             AuthToken = token;

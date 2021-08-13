@@ -12,6 +12,7 @@ namespace Sitecore.GraphQL.ClientXamarin.ViewModels
         private string itemId;
         private string text;
         private string description;
+        private string imageSRC;
         public string Id { get; set; }
 
         public string Text
@@ -39,6 +40,12 @@ namespace Sitecore.GraphQL.ClientXamarin.ViewModels
             }
         }
 
+        public string ImageSRC
+        {
+            get => imageSRC;
+            set => SetProperty(ref imageSRC, value);
+        }
+
         public async void LoadItemId(string itemId)
         {
             try
@@ -47,6 +54,7 @@ namespace Sitecore.GraphQL.ClientXamarin.ViewModels
                 Id = item.Id;
                 Text = item.Text;
                 Description = item.Description;
+                ImageSRC = item.ImageSRC;
             }
             catch (Exception)
             {

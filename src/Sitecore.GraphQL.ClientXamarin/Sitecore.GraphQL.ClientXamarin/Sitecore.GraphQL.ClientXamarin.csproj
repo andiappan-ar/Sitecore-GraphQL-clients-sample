@@ -6,8 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="GraphQL-Parser" Version="7.2.0" />
     <PackageReference Include="GraphQL.Client" Version="3.2.4" />
     <PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="3.2.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>

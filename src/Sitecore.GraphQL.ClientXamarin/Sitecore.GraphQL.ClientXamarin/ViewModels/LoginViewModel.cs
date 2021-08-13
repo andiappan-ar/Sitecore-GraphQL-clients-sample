@@ -45,15 +45,9 @@ namespace Sitecore.GraphQL.ClientXamarin.ViewModels
         }
 
         private async void OnLoginClicked(object obj)
-        {
-            
+        {               
 
-            string siteDomain = "cb76982436b7.ngrok.io";
-            string SSCURL = "https://" + siteDomain + "/sitecore/api/ssc/auth/login";
-            string SCC_GRAPHURL = "https://" + siteDomain + "/sitecore/api/graph/items/master";
-            string domain = "sitecore";           
-
-            var authCookie = Login.GetAuthroizedCookie(SSCURL, domain, userName, password);
+            var authCookie = Login.GetAuthroizedCookie(Login.SSCURL, Login.domain, userName, password);
 
             if (!string.IsNullOrEmpty(authCookie))
             {

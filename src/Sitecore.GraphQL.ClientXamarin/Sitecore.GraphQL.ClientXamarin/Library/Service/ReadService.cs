@@ -11,7 +11,7 @@ namespace Sitecore.GraphQL.Services.Service
 {
     public static class ReadService
     {
-        public static async Task<GraphQLResponse<T>> GetGraphQLData<T>(string authCookie,string SCC_GRAPHURL,string siteDomain,string graphQLQuery)
+        public static async Task<T> GetGraphQLData<T>(string authCookie,string SCC_GRAPHURL,string siteDomain,string graphQLQuery)
         {
             GraphQLResponse<T> result;
 
@@ -43,10 +43,10 @@ namespace Sitecore.GraphQL.Services.Service
                 throw;
             }
 
-            return result;
+            return result.Data;
         }
 
-        public static GraphQLResponse<T> FetchGraphQLData<T>(string authCookie, string SCC_GRAPHURL, string siteDomain, string graphQLQuery)
+        public static T FetchGraphQLData<T>(string authCookie, string SCC_GRAPHURL, string siteDomain, string graphQLQuery)
         {
             var result = Task.Run(async () => await GetGraphQLData<T>(authCookie, SCC_GRAPHURL, siteDomain, graphQLQuery)).Result;
             return result;
